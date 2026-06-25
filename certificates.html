@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certificates &amp; Achievements | Om Shivnath Kadam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ════════════════════════════════════
+       NAV
+  ═══════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+          <!-- Logo + Profile Image -->
+      <div class="nav-brand">
+        <img src="IMG-20251212-WA0064.jpg"
+            alt="Om Kadam"
+            class="nav-profile-img">
+        <a href="index.html" class="nav-logo">Om<span>.</span></a>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="certificates.html" class="active-link">Certificates &amp; Achievements</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ════════════════════════════════════
+       CERTIFICATES
+  ════════════════════════════════════ -->
+  <section id="certificates">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Certificates</h2>
+        <div class="title-underline"></div>
+      </div>
+      <p class="section-subtext">
+        14 verified certificates from various trusted platforms — spanning AI, Python,
+        data analytics, and cybersecurity.
+      </p>
+
+      <!-- Filter Tabs -->
+      <div class="cert-filters">
+        <button class="filter-btn active" data-filter="all">All (14)</button>
+        <button class="filter-btn" data-filter="ai">🤖 AI &amp; ML</button>
+        <button class="filter-btn" data-filter="python">🐍 Python</button>
+        <button class="filter-btn" data-filter="data">📊 Data</button>
+        <button class="filter-btn" data-filter="security">🔒 Security</button>
+        <button class="filter-btn" data-filter="achievements">🏆 Achievements</button>
+        <button class="filter-btn" data-filter="other">📋 Other</button>
+      </div>
+
+      <!-- Certificate Grid -->
+      <div class="cert-grid">
+
+        <!-- 1 -->
+        <div class="cert-card" data-category="ai">
+          <div class="cert-img-wrap">
+            <div class="cert-placeholder"><span>🤖</span></div>
+            <img src="Claude 101.png" alt="Claude 101" class="cert-img"
+                 onerror="this.style.display='none'" />
+            <div class="cert-overlay"><a href="Claude 101.png" target="_blank" rel="noopener noreferrer" class="cert-view-btn">View Certificate</a></div>
+          </div>
+          <div class="cert-info">
+            <span class="cert-badge ai">AI</span>
+            <h3 class="cert-name">Claude 101</h3>
+            <p class="cert-issuer">Anthropic</p>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="cert-card" data-category="python">
+          <div class="cert-img-wrap">
+            <div class="cert-placeholder"><span>🐍</span></div>
+            <img src="Python Essetials 1.png" alt="Python Essentials 1" class="cert-img"
+                 onerror="this.style.display='none'" />
+            <div class="cert-overlay"><a href="Python Essetials 1.png" target="_blank" rel="noopener noreferrer" class="cert-view-btn">View Certificate</a></div>
+          </div>
+          <div class="cert-info">
+            <span class="cert-badge python">Python</span>
+            <h3 class="cert-name">Python Essentials 1</h3>
+            <p class="cert-issuer">Cisco Networking Academy</p>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="cert-card" data-category="python">
+          <div class="cert-img-wrap">
+            <div class="cert-placeholder"><span>🐍</span></div>
+            <img src="Pytohn Essentials 2.png" alt="Python Essentials 2" class="cert-img"
+                 onerror="this.style.display='none'" />
+            <div class="cert-overlay"><a href="Pytohn Essentials 2.png" target="_blank" rel="noopener noreferrer" class="cert-view-btn">View Certificate</a></div>
+          </div>
+          <div class="cert-info">
+            <span class="cert-badge python">Python</span>
+            <h3 class="cert-name">Python Essentials 2</h3>
+            <p class="cert-issuer">Cisco Networking Academy</p>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="cert-card" data-category="ai">
+          <div class="cert-img-wrap">
+            <div class="cert-placeholder"><span>🤖</span></div>
+            <img src="Analyze Customer Reviews.png" alt="Apply AI: Analyze Customer Reviews" class="cert-img"
+                 onerror="this.style.display='none'" />
+            <div class="cert-overlay"><a href="Analyze Customer Reviews.png" target="_blank" rel="noopener noreferrer" class="cert-view-btn">View Certificate</a></div>
+          </div>
+          <div class="cert-info">
+            <span class="cert-badge ai">AI</span>
+            <h3 class="cert-name">Apply AI: Analyze Customer Reviews</h3>
+            <p class="cert-issuer">Cisco Networking Academy</p>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="cert-card" data-category="ai">
+          <div class="cert-img-wrap">
+            <div class="cert-placeholder"><span>🤖</span></div>
+            <img src="AI Fluency Framework and foundation.png" alt="AI Fluency: Framework & Foundation" class="cert-img"
+                 onerror="this.style.display='none'" />
+            <div class="cert-overlay"><a href="AI Fluency Framework and foundation.png" target="_blank" rel="noopener noreferrer" class="cert-view-btn">View Certificate</a></div>
+          </div>
+          <div class="cert-info">
+            <span class="cert-badge ai">AI</span>
+            <h3 class="cert-name">AI Fluency: Framework &amp; Foundation</h3>
+            <p class="cert-issuer">Anthropic</p>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="cert-card" data-category="ai">
+          <div class="cert-img-wrap">
+            <div class="cert-placeholder"><span>🤖</span></div>
+            <img src="Ai fluency For Students.png" alt="AI Fluency for Students" class="cert-img"
+                 onerror="this.style.display='none'" />
+            <div class="cert-overlay"><a href="Ai fluency For Students.png" target="_blank" rel="noopener noreferrer" class="cert-view-btn">View Certificate</a></div>
+          </div>
+          <div class="cert-info">
+            <span class="cert-badge ai">AI</span>
+            <h3 class="cert-name">AI Fluency for Students</h3>
+            <p class="cert-issuer">Anthropic</p>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="cert-card" data-category="data">
+          <div class="cert-img-wrap">
+            <div class="cert-placeholder"><span>📊</span></div>
+            <img src="Data Analytics Essentials.png" alt="Data Analytics Essentials" class="cert-img"
+                 onerror="this.style.display='none'" />
+            <div class="cert-overlay"><a href="Data Analytics Essentials.png" target="_blank" rel="noopener noreferrer" class="cert-view-btn">View Certificate</a></div>
+          </div>
+          <div class="cert-info">
+            <span class="cert-badge data">Data</span>
+            <h3 class="cert-name">Data Analytics Essentials</h3>
+            <p class="cert-issuer">MIT Academy of Engineering</p>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="cert-card" data-category="data other">
+          <div class="cert-img-wrap">
+            <div class="cert-placeholder"><span>📋</span></div>
+            <img src="S4DS Membership Certificate.png" alt="S4DS Membership Certificate" class="cert-img"
+                 onerror="this.style.display='none'" />
+            <div class="cert-overlay"><a href="S4DS Membership Certificate.png" target="_blank" rel="noopener noreferrer" class="cert-view-btn">View Certificate</a></div>
+          </div>
+          <div class="cert-info">
+            <span class="cert-badge other">Membership</span>
+            <span class="cert-badge data">Data</span>
+            <h3 class="cert-name">S4DS Membership Certificate</h3>
+            <p class="cert-issuer">Society for Data Science</p>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="cert-card" data-category="data">
+          <div class="cert-img-wrap">
+            <div class="cert-placeholder"><span>📊</span></div>
+            <img src="The Importance OF Data Visualization.png" alt="The Importance of Data Visualization" class="cert-img"
+                 onerror="this.style.display='none'" />
+            <div class="cert-overlay"><a href="The Importance OF Data Visualization.png" target="_blank" rel="noopener noreferrer" class="cert-view-btn">View Certificate</a></div>
+          </div>
+          <div class="cert-info">
+            <span class="cert-badge data">Data</span>
+            <h3 class="cert-name">The Importance of Data Visualization</h3>
+            <p class="cert-issuer">IBM SkillsBuild</p>
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="cert-card" data-category="security">
+          <div class="cert-img-wrap">
+            <div class="cert-placeholder"><span>🔒</span></div>
+            <img src="Introduction to Cybersecurity.png" alt="Introduction to Cybersecurity" class="cert-img"
+                 onerror="this.style.display='none'" />
+            <div class="cert-overlay"><a href="Introduction to Cybersecurity.png" target="_blank" rel="noopener noreferrer" class="cert-view-btn">View Certificate</a></div>
+          </div>
+          <div class="cert-info">
+            <span class="cert-badge security">Security</span>
+            <h3 class="cert-name">Introduction to Cybersecurity</h3>
+            <p class="cert-issuer">Cisco Networking Academy</p>
+          </div>
+        </div>
+
+        <!-- 11 -->
+        <div class="cert-card" data-category="ai">
+          <div class="cert-img-wrap">
+            <div class="cert-placeholder"><span>🤖</span></div>
+            <img src="Introduction to Modern AI.png" alt="Introduction to Modern AI" class="cert-img"
+                 onerror="this.style.display='none'" />
+            <div class="cert-overlay"><a href="Introduction to Modern AI.png" target="_blank" rel="noopener noreferrer" class="cert-view-btn">View Certificate</a></div>
+          </div>
+          <div class="cert-info">
+            <span class="cert-badge ai">AI</span>
+            <h3 class="cert-name">Introduction to Modern AI</h3>
+            <p class="cert-issuer">MIT Academy of Engineering</p>
+          </div>
+        </div>
+
+        <!-- 12 -->
+        <div class="cert-card" data-category="security">
+          <div class="cert-img-wrap">
+            <div class="cert-placeholder"><span>🔒</span></div>
+            <img src="Cyber Threat Management.png" alt="Cyber Threat Management" class="cert-img"
+                 onerror="this.style.display='none'" />
+            <div class="cert-overlay"><a href="Cyber Threat Management.png" target="_blank" rel="noopener noreferrer" class="cert-view-btn">View Certificate</a></div>
+          </div>
+          <div class="cert-info">
+            <span class="cert-badge security">Security</span>
+            <h3 class="cert-name">Cyber Threat Management</h3>
+            <p class="cert-issuer">MIT Academy of Engineering</p>
+          </div>
+        </div>
+
+        <!-- 13 -->
+        <div class="cert-card" data-category="python data">
+          <div class="cert-img-wrap">
+            <div class="cert-placeholder"><span>🐍</span></div>
+            <img src="Data Science Essentials with Python.png" alt="Data Science Essentials with Python" class="cert-img"
+                 onerror="this.style.display='none'" />
+            <div class="cert-overlay"><a href="Data Science Essentials with Python.png" target="_blank" rel="noopener noreferrer" class="cert-view-btn">View Certificate</a></div>
+          </div>
+          <div class="cert-info">
+            <span class="cert-badge python">Python</span>
+            <span class="cert-badge data">Data</span>
+            <h3 class="cert-name">Data Science Essentials with Python</h3>
+            <p class="cert-issuer">MIT Academy of Engineering</p>
+          </div>
+        </div>
+
+        <!-- 14 -->
+        <div class="cert-card" data-category="ai">
+          <div class="cert-img-wrap">
+            <div class="cert-placeholder"><span>🤖</span></div>
+            <img src="Ai fluency for nonprofits.png" alt="AI Fluency for Nonprofits" class="cert-img"
+                 onerror="this.style.display='none'" />
+            <div class="cert-overlay"><a href="Ai fluency for nonprofits.png" target="_blank" rel="noopener noreferrer" class="cert-view-btn">View Certificate</a></div>
+          </div>
+          <div class="cert-info">
+            <span class="cert-badge ai">AI</span>
+            <h3 class="cert-name">AI Fluency for Nonprofits</h3>
+            <p class="cert-issuer">Anthropic</p>
+          </div>
+        </div>
+
+      </div><!-- /cert-grid -->
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════ -->
+  <footer>
+    <div class="container footer-inner">
+      <p class="footer-logo">Om<span>.</span></p>
+      <p class="footer-copy">© 2026 Om Shivnath Kadam. All rights reserved.</p>
+      <a href="index.html" class="back-to-top" title="Back to top">↑</a>
+    </div>
+  </footer>
+
+
+  <!-- ════════════════════════════════════
+       JAVASCRIPT
+  ════════════════════════════════════ -->
+  <script>
+    /* ── Sticky nav shadow ── */
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+
+    /* ── Mobile hamburger ── */
+    const navToggle = document.getElementById('navToggle');
+    const navLinks  = document.getElementById('navLinks');
+
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      navToggle.classList.toggle('open');
+    });
+
+    // close nav when a link is clicked
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        navToggle.classList.remove('open');
+      });
+    });
+
+    /* ── Certificate filter ── */
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const certCards  = document.querySelectorAll('.cert-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.dataset.filter;
+        certCards.forEach(card => {
+          const show = filter === 'all' || card.dataset.category.split(' ').includes(filter);
+          card.style.display = show ? '' : 'none';
+        });
+      });
+    });
+
+    /* ── Scroll reveal (cards fade up on scroll) ── */
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.card, .cert-card').forEach((el, i) => {
+      el.classList.add('reveal');
+      el.style.transitionDelay = (i % 4) * 60 + 'ms'; // stagger per row
+      revealObserver.observe(el);
+    });
+  </script>
+
+</body>
+</html>

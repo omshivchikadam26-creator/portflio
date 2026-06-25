@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Om Shivnath Kadam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ════════════════════════════════════
+       NAV
+  ═══════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+         <!-- Logo + Profile Image -->
+      <div class="nav-brand">
+        <img src="IMG-20251212-WA0064.jpg"
+            alt="Om Kadam"
+            class="nav-profile-img">
+        <a href="index.html" class="nav-logo">Om<span>.</span></a>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="active-link">Projects</a></li>
+        <li><a href="certificates.html">Certificates &amp; Achievements</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ════════════════════════════════════
+       PROJECTS
+  ════════════════════════════════════ -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Projects</h2>
+        <div class="title-underline"></div>
+      </div>
+      <p class="section-subtext">
+        Academic and personal works that reflect my interests in software, design thinking,
+        and practical technology solutions.
+      </p>
+      <div class="grid grid-2">
+
+        <div class="card card-hover project-card">
+          <div class="project-icon">🚌</div>
+          <h3>Smart Bus Tracking & ETA Prediction System</h3>
+          <p>
+            Developed a web-based public transportation platform that provides real-time bus tracking,
+            route information, and estimated arrival times (ETA). Integrated a Machine Learning model
+            that analyzes historical traffic data, travel patterns, and user feedback to improve arrival-time
+            predictions and enhance commuting efficiency. The system helps passengers make informed travel
+            decisions through accurate, data-driven transit updates.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Machine Learning</span>
+            <span class="tag">GPS Tracking</span>
+            <span class="tag">ETA Prediction</span>
+            <span class="tag">Data Analysis</span>
+            <span class="tag">Web Development</span>
+          </div>
+        </div>
+
+        <div class="card card-hover project-card">
+          <div class="project-icon">🌐</div>
+          <h3>Personal Portfolio Website</h3>
+          <p>
+            Designed and developed a responsive personal portfolio website to showcase academic achievements,
+            technical skills, projects, and career interests. Focused on modern UI design, accessibility,
+            and a structured user experience to effectively present professional information.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Web Development</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Responsive Design</span>
+          </div>
+        </div>
+
+        <div class="card card-hover project-card">
+          <div class="project-icon">✈️</div>
+          <h3>Tours &amp; Travels Management System</h3>
+          <p>
+            Developed a Linux-based management system for handling travel bookings, customer records,
+            and operational data. Utilized Linux file management and command-line tools to organize,
+            process, and maintain travel-related information efficiently.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Linux</span>
+            <span class="tag">System Administration</span>
+            <span class="tag">File Management</span>
+            <span class="tag">Database Concepts</span>
+          </div>
+        </div>
+
+        <div class="card card-hover project-card">
+          <div class="project-icon">🚨</div>
+          <h3>Smart Accident Detection &amp; Emergency Alert System</h3>
+          <p>
+            Designed and implemented an IoT-based safety system capable of detecting vehicle accidents
+            and automatically triggering emergency alerts. The system is intended to reduce response
+            times by notifying emergency contacts and support services when a collision is detected.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Sensors</span>
+            <span class="tag">Hardware Integration</span>
+          </div>
+        </div>
+        <div class="card card-hover project-card">
+          <div class="project-icon">🌿</div>
+          <h3>CropScan AI – Plant Disease Detection System</h3>
+          <p>
+            Developed an AI-powered web application that detects plant diseases from uploaded leaf images
+            using a fine-tuned ResNet-50 deep learning model. Trained on the PlantVillage dataset with
+            advanced techniques including data augmentation, label smoothing, and early stopping to improve
+            classification accuracy. The platform enables rapid disease identification and supports smarter
+            agricultural decision-making.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Deep Learning</span>
+            <span class="tag">Computer Vision</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">Flask</span>
+            <span class="tag">Python</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       JAVASCRIPT
+  ════════════════════════════════════ -->
+  <script>
+    /* ── Sticky nav shadow ── */
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+
+    /* ── Mobile hamburger ── */
+    const navToggle = document.getElementById('navToggle');
+    const navLinks  = document.getElementById('navLinks');
+
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      navToggle.classList.toggle('open');
+    });
+
+    // close nav when a link is clicked
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        navToggle.classList.remove('open');
+      });
+    });
+
+    /* ── Scroll reveal (cards fade up on scroll) ── */
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.card, .cert-card').forEach((el, i) => {
+      el.classList.add('reveal');
+      el.style.transitionDelay = (i % 4) * 60 + 'ms'; // stagger per row
+      revealObserver.observe(el);
+    });
+  </script>
+
+</body>
+</html>
